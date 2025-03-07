@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Meu Portfólio</title>
+</head>
+
+<body>
+
+    <nav id="home" class="menubar">
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#habexp">Habilidades</a></li>
+            <li><a href="#projets">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header id="introducao" class="cabecalho">
+            <h2>Introdução</h2>
+
+            <div class="cabecalho-info">
+
+                <div class="cabecalho-info-div">
+                    <h1>Fernando Macedo</h1>
+                    <img src="imagens/profile-image-200px.jpg" alt="foto perfil">
+                    <p>Olá! Meu nome é <strong>Fernando Macedo</strong>, tenho 27 anos e sou um desenvolvedor de
+                        software altamente
+                        motivado com 5 anos de experiência em desenvolvimento de aplicativos móveis. Sou apaixonado por
+                        tecnologia e estou sempre procurando aprender novas habilidades para melhorar meu trabalho. Meu
+                        objetivo é trabalhar em uma empresa inovadora onde possa aplicar minhas habilidades e
+                        conhecimentos para ajudar a empresa a crescer.</p>
+                </div>
+
+            </div>
+
+        </header>
+
+        <section id="habexp" class="hab-exp-container">
+            <h2>Habilidades e Experiências</h2>
+            <div class="colunas">
+                <div class="coluna1">
+                    <h3>Habilidades</h3>
+                    <p>Por estudar bastante, ver várias linguagens de programação, conhecer algumas delas de forma
+                        aprofundada. Possuo habilidades em linguagens de programação:</p>
+                    <ul>
+                        <li>Java</li>
+                        <li>Kotlin</li>
+                        <li>Swift</li>
+                        <li>Bem como conhecimento em desenvolvimento de aplicativos para iOS e Android.</li>
+                    </ul>
+                </div>
+                <div class="coluna2">
+                    <h3>Experiências</h3>
+                    <p>Durante esses meus 5 anos de experiência em Desenvolvimento Mobile, eu ganhei bastante
+                        conhecimento sobre as linguagens nas quais utilizei:</p>
+                    <ul>
+                        <li>Utilizei bastante o Java com o Spring Framework para desenvolvimento de aplicações,
+                            necessitando de uma velocidade de desenvolvimento mais
+                            rápida.</li>
+                        <li>Participei do desenvolvimento de algumas aplicações conhecidas, utilizando Kotlin e Swift,
+                            para os respectivos sistemas operacionais (Android & IOS).</li>
+                        <li>Já cheguei a trabalhar com algumas outras linguagens para desenvolver programas para desktop
+                            (C++, C#), mas não por muito tempo.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="projetos-container">
+            <h2>Projetos</h2>
+            <div class="projetos">
+                <div class="projeto1">
+                    <h3>Snake Game
+                    </h3>
+                    <img src="imagens/snake-game-200px.png" alt="foto projeto1">
+                    <p class="texto">Em 2018, quando ainda estava aprendendo desenvolvimento mobile, participei de um
+                        projeto com alguns amigos para criar um "Snake Game", o famoso jogo da "cobrinha".
+                    </p>
+
+                </div>
+
+                <div class="projeto2">
+                    <h3>Youtube Downloader</h3>
+                    <img src="imagens/ytb-dwn-200px.jpg" alt="foto projeto2">
+                    <p class="texto">Em 2020, quando já tinha um conhecimento maior nas linguagens e outros recursos,
+                        criei um aplicativo que baixava videos diretamente do YouTube e que também permitia o usuários
+                        escolher qual o formato do arquivo (mp3, mp4, wav, wmv...).
+                    </p>
+
+                </div>
+                <div class="projeto3">
+                    <h3>Threads Social Media</h3>
+                    <img src="imagens/threads-200px.jpg" alt="foto projeto3">
+                    <p class="texto">
+                        O projeto mais recente no qual trabalhei, foi no desenvolvimento do aplicativo "Threads" da
+                        empresa Meta Platforms, na qual o aplicativo visa funcionar como adjacente ao Instagram, um
+                        outro produto da Meta. </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contato-container">
+            <h2>Contato</h2>
+            <div class="formulario-container">
+                <form action="formularios.php" method="post">
+                    <h3>Entre em Contato!</h3>
+                    <label class="label-campos" for="nome">Nome</label>
+                    <input type="text" class="input-campos" name="nome_usuario" id="nome"
+                        placeholder="Digite seu nome aqui" required>
+                    <label class="label-campos" for="e-mail">E-mail</label>
+                    <input type="email" class="input-campos" name="email_usuario" id="e-mail"
+                        placeholder="Digite seu e-mail aqui" required>
+                    <label class="label-campos" for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="21" rows="10" placeholder="Deixe uma mensagem aqui"
+                        required></textarea>
+                    <input type="submit" class="input-submit" value="Enviar Formulário">
+                </form>
+            </div>
+        </section>
+
+        <a class="menu-home" href="#home">
+            <img src="imagens/uparrow.png" alt="seta para cima">
+        </a>
+    </main>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
