@@ -1,0 +1,542 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cor1: #223240;
+    --cor2: #3B8C66;
+    --cor3: #347355;
+    --cor4: #60BF81;
+    --cor5: #93D94E;
+    --cor6: #376e4b;
+}
+
+body {
+    background-color: var(--cor6);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-width: 300px;
+}
+
+/* CSS MENUBAR */
+nav.menubar {
+    background-color: var(--cor5);
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin: auto;
+}
+
+nav.menubar>ul {
+    max-width: 950px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+    list-style: none;
+}
+
+nav.menubar>ul>li {
+    width: 150px;
+    margin: 3px auto;
+    text-align: center;
+    padding: 2px;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.115);
+}
+
+nav.menubar>ul>li:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.350);
+}
+
+nav.menubar>ul>li>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+nav.menubar>ul>li>a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* CSS MENUBAR */
+
+/* CSS MAIN */
+main {
+    max-width: 950px;
+    min-height: 100vh;
+    margin: auto;
+    background-color: var(--cor5);
+}
+
+/* CSS MAIN */
+
+/* CSS CABECALHO */
+main>header.cabecalho {
+    background-color: var(--cor1);
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main>header.cabecalho>h2 {
+    text-align: left;
+    margin: 0 auto 20px auto;
+    color: var(--cor4)
+}
+
+main>header.cabecalho>div.cabecalho-info {
+    background-color: var(--cor2);
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    min-height: 530px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+main>header.cabecalho>div.cabecalho-info>div.cabecalho-info-div {
+    background-color: var(--cor5);
+    width: 90%;
+    min-height: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.150);
+}
+
+main>header.cabecalho>div.cabecalho-info>div.cabecalho-info-div>h1 {
+    padding: 3px;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.13);
+}
+
+main>header.cabecalho>div.cabecalho-info>div.cabecalho-info-div>img {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 3px;
+}
+
+main>header.cabecalho>div.cabecalho-info>div.cabecalho-info-div>p {
+    background-color: white;
+    border-radius: 10px;
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+    color: #000;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS CABECALHO */
+
+/* CSS HABILIDADES E EXPERIENCIAS*/
+main>section.hab-exp-container {
+    background-color: var(--cor1);
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main>section.hab-exp-container>h2 {
+    text-align: left;
+    margin: 0 auto 20px auto;
+    color: var(--cor4);
+}
+
+main>section.hab-exp-container>div.colunas {
+    background-color: var(--cor2);
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    min-height: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+main>section.hab-exp-container>div.colunas>div {
+    background-color: var(--cor5);
+    width: 90%;
+    min-height: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.150);
+    list-style-position: inside;
+}
+
+main>section.hab-exp-container>div.colunas>div>h3 {
+    text-align: center;
+    padding: 3px;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.13);
+}
+
+main>section.hab-exp-container>div.colunas>div>p {
+    text-align: justify;
+    padding: 15px 10px;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+main>section.hab-exp-container>div.colunas>div>ul {
+    list-style-type: square;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+main>section.hab-exp-container>div.colunas>div>ul>li {
+    text-align: justify;
+    margin: 20px auto;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+/* CSS HABILIDADES E EXPERIENCIAS*/
+
+/* CSS PROJETOS */
+main>section.projetos-container {
+    background-color: var(--cor1);
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+
+}
+
+main>section.projetos-container>h2 {
+    text-align: left;
+    margin: 0 auto 20px auto;
+    color: var(--cor4);
+}
+
+main>section.projetos-container>div.projetos {
+    background-color: var(--cor2);
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    min-height: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+main>section.projetos-container>div.projetos>div {
+    background-color: var(--cor5);
+    width: 90%;
+    min-height: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.150);
+}
+
+main>section.projetos-container>div.projetos>div>h3 {
+    text-align: center;
+    padding: 3px;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.13);
+}
+
+main>section.projetos-container>div.projetos>div>img {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 3px;
+}
+
+
+main>section.projetos-container>div.projetos>div>p.texto {
+    padding: 25px;
+    text-align: justify;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: white;
+    color: #000;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+/* CSS PROJETOS */
+
+/* CSS CONTATO */
+main>section.contato-container {
+    background-color: var(--cor1);
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main>section.contato-container>h2 {
+    text-align: left;
+    margin: 0 auto 20px auto;
+    color: var(--cor4);
+}
+
+main>section.contato-container>div.formulario-container {
+    background-color: var(--cor2);
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    min-height: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+main>section.contato-container>div.formulario-container>form {
+    background-color: var(--cor5);
+    width: 90%;
+    min-height: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.150);
+}
+
+main>section.contato-container>div.formulario-container>form>h3 {
+    text-align: center;
+    padding: 3px;
+    margin: 0 auto 20px auto;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.13);
+}
+
+main>section.contato-container>div.formulario-container>form>label.label-campos {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    padding: 2px;
+    font-weight: bold;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.115);
+}
+
+main>section.contato-container>div.formulario-container>form>input.input-campos {
+    display: block;
+    width: 70%;
+    min-height: 35px;
+    margin: auto;
+    padding: 2px;
+}
+
+main>section.contato-container>div.formulario-container>form>textarea {
+    display: block;
+    width: 70%;
+    min-height: 50px;
+    margin: 5px auto;
+}
+
+main>section.contato-container>div.formulario-container>form>input.input-submit {
+    display: block;
+    margin: 20px auto;
+    max-width: 70%;
+    min-height: 35px;
+    padding: 5px;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.115);
+}
+
+/* CSS CONTATO */
+
+/* CSS HOME */
+
+main>a.menu-home {
+    background-color: rgba(255, 255, 255, 0.581);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border-radius: 35%;
+}
+
+main>a.menu-home:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+main>a.menu-home:active {
+    background-color: rgb(255, 255, 255);
+}
+
+/* CSS HOME */
+
+/* CSS RODAPE */
+footer {
+    background-color: var(--cor5);
+    padding: 3px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.10);
+
+}
+
+/* CSS RODAPE */
+
+/* @MEDIA QUERIES */
+
+@media only screen and (max-width: 350px) {
+    main>header.cabecalho>div.cabecalho-info>div.cabecalho-info-div>img {
+        display: block;
+        margin: 10px auto;
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 3px;
+    }
+
+    main>section.projetos-container>div.projetos>div>img {
+        display: block;
+        margin: 10px auto;
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 3px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    nav.menubar {
+        background-color: var(--cor5);
+        width: 100%;
+        height: 65px;
+        padding: 10px;
+        margin: auto;
+    }
+
+    nav.menubar>ul {
+        max-width: 950px;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        padding: 5px;
+        list-style: none;
+    }
+
+    nav.menubar>ul>li {
+        width: 100px;
+        margin: 3px auto;
+        text-align: center;
+        padding: 2px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        max-width: 950px;
+        min-height: 400vh;
+        margin: auto;
+        background-color: var(--cor5);
+    }
+
+    main>header.cabecalho {
+        background-color: var(--cor1);
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    main>section.hab-exp-container {
+        background-color: var(--cor1);
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    main>section.hab-exp-container>div.colunas {
+        background-color: var(--cor2);
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 850px;
+        min-height: 400px;
+        padding: 20px;
+        margin: auto;
+    }
+
+    main>section.hab-exp-container>div.colunas>div {
+        background-color: var(--cor5);
+        width: 45%;
+        min-height: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.150);
+        list-style-position: inside;
+    }
+
+    main>section.hab-exp-container>div.colunas>div>p {
+        min-height: 115px;
+        text-align: justify;
+        padding: 15px 10px;
+        text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.10);
+    }
+
+    main>section.hab-exp-container>div.colunas>div>ul {
+        list-style-type: square;
+        min-height: 415px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    main>section.projetos-container {
+        background-color: var(--cor1);
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    main>section.projetos-container>div.projetos {
+        background-color: var(--cor2);
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 850px;
+        max-height: 750px;
+        padding: 15px;
+        margin: auto;
+    }
+
+    main>section.projetos-container>div.projetos>div {
+        background-color: var(--cor5);
+        width: 30%;
+        max-height: 660px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.150);
+    }
+
+    main>section.projetos-container>div.projetos>div>p.texto {
+        padding: 25px;
+        text-align: justify;
+        margin: 20px auto;
+        min-height: 350px;
+        border-radius: 10px;
+        background-color: white;
+        color: #000;
+        text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.10);
+    }
+
+    main>section.contato-container {
+        background-color: var(--cor1);
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+    }
+}
+
+/* @MEDIA QUERIES */
